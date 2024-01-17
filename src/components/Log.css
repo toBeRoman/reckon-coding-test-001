@@ -1,0 +1,97 @@
+/* src/components/Log.css */
+.log-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+}
+  
+  .log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .log-error {
+    color: #d9534f;
+    margin: 10px 0;
+  }
+  
+  .stock-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .stock-item {
+    padding: 15px;
+    margin-bottom: 10px; /* Space between items */
+    border: 1px solid #eee;
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* Card background */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Added shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.stock-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+  
+  .stock-item:last-child {
+    border-bottom: none;
+  }
+  
+  .stock-code {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .stock-price {
+    color: #5cb85c;
+    display: inline-block;
+  }
+  
+  .stock-detail {
+    margin-top: 5px;
+  }
+  
+  .pause-button {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 1em;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .stock-item {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .log-container {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .stock-list {
+      max-height: 300px; 
+    }
+  }
+  

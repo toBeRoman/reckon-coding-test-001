@@ -1,0 +1,40 @@
+/* src/components/Summary.css */
+.summary-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  .summary-title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .summary-table {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .summary-header {
+    font-weight: bold;
+    display: contents;
+  }
+  
+  .summary-row {
+    display: contents;
+  }
+  
+  .summary-row > span {
+    display: block;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .summary-row:last-child > span {
+    border-bottom: none;
+  }
+  
